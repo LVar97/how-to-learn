@@ -306,3 +306,74 @@
   width: 877px;
   height: 877px;
 }
+
+
+/* footer */
+
+.footer{
+  min-height: 250px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: black;
+  color: white;
+}
+
+.footer__columns{
+  display: flex;
+  margin: auto;
+  width: 90%;
+  justify-content: space-between;
+  height: 250px;
+}
+
+.footer__column_content_copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 711px;
+  justify-content: space-between;
+}
+
+.logo_place_footer{
+  height: 35px;
+}
+
+.footer__author{
+  margin: 0;
+  padding: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading{
+  margin: 0;
+  text-align: left;
+  padding-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__column-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: start;
+  padding-bottom: 16px;
+
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-link{
+  text-decoration: none;
+  color: white;
+}
+.footer__column-icon{
+  padding-right: 10px;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+}
