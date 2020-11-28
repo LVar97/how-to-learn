@@ -64,8 +64,6 @@
   color: #2f80ed;
 }
 
-.header__row-image{}
-
 .header__main-illustration{
   position: absolute;
   bottom:0;
@@ -90,11 +88,10 @@
 }
 
 /* блок контент */
-.content{}
 
 .description{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
 }
 
@@ -145,8 +142,7 @@
 /* digits */
 
 .digits{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .flex__row{
@@ -220,9 +216,6 @@
   position: relative;
   height: 790px;
   background-color: #f2f2f2;
-}
-
-.feynman__box{
   padding-top: 100px;
 }
 
@@ -241,7 +234,7 @@
 
   line-height: 1.15;
   font-size: 120px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .feynman__subtitle{
@@ -282,7 +275,7 @@
   position: relative;
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
   overflow: hidden;
 }
@@ -314,7 +307,7 @@
   min-height: 250px;
   padding-top: 60px;
   padding-bottom: 40px;
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
 }
 
@@ -371,6 +364,7 @@
   text-decoration: none;
   color: white;
 }
+
 .footer__column-icon{
   padding-right: 10px;
   height: 16px;
