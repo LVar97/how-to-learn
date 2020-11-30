@@ -9,9 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.indent{
-  margin:0;
-}
 .header {
   display: flex;
   position: relative;
@@ -22,14 +19,6 @@
   /* выше установили ограничения для секции */
 }
 
-.header__row-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  z-index: 2;
-}
-
-
 .logo{
   height: 32px;
   width: 183px;
@@ -39,14 +28,19 @@
   position: absolute;
   top: 30px;
   left: 64px;
+  z-index: 2;
 }
 
 .header__title{
   font-size: 102px;
   line-height: 96px;
   font-weight: bold;
-  margin: 0 0 0 64px;
+  padding-left: 64px;
   width: 730px;
+
+  align-self: center;
+  margin: 0;
+  z-index: 2;
 }
 
 .header__subtitle{
@@ -57,6 +51,11 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
+}
+
+.header__subtitle p{
+  margin: 0;
 }
 
 .header__link{
@@ -90,9 +89,8 @@
 /* блок контент */
 
 .description{
-  padding-top: 100px;
-  padding-bottom: 100px;
-
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .description__two-columns{
@@ -121,16 +119,16 @@
   min-width: 784px;
 }
 
+.two-columns__main-text :nth-of-type(2n){
+  padding: 30px 0;
+}
+
 .two-columns__paragraph{
   align-items: start;
   margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-}
-
-.paragraph__pad{
-  padding: 30px 0;
 }
 
 .two-columns__span-accent{
@@ -142,14 +140,12 @@
 /* digits */
 
 .digits{
-  padding-bottom: 100px;
-}
+  margin-top: 100px;
+  margin-bottom: 100px;
 
-.flex__row{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
 }
 
 .section-title{
@@ -160,9 +156,6 @@
   font-size: 60px;
   font-weight: bold;
   z-index: 1;
-}
-
-.section-title__pad{
   padding-bottom: 20px;
 }
 
@@ -187,27 +180,22 @@
 .table__cell{
   width: 250px;
   margin: 0;
-}
-
-.table__cell__pad{
   padding-top: 60px;
 }
 
 .table__heading{
   margin: 0;
-  padding-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
 .table__text{
-  /* align-items: center;
-  justify-content: flex-start; */
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
+  padding-top: 20px;
 }
 
 /* блок фейнман */
@@ -217,20 +205,16 @@
   height: 790px;
   background-color: #f2f2f2;
   padding-top: 100px;
-}
 
-.feynman__flex__row{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-image: url('../images/feynman.png');
+  background-position: left bottom; /* Положение фона */
+  background-repeat: no-repeat;
 }
 
 .feynman__title{
   margin: auto;
   width: 648px;
   text-align: center;
-  z-index: 1;
 
   line-height: 1.15;
   font-size: 120px;
@@ -240,8 +224,7 @@
 .feynman__subtitle{
   margin-top: 70px;
   margin-bottom: 0;
-  align-self: center;
-  z-index: 1;
+  text-align: center;
 
   line-height: 51px;
   font-size: 36px;
@@ -278,6 +261,10 @@
   background-color: #1f1f1f;
   color: white;
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .table_theme_dark{
