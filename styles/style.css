@@ -20,7 +20,6 @@
 }
 
 .logo{
-  height: 32px;
   width: 183px;
 }
 
@@ -29,6 +28,7 @@
   top: 30px;
   left: 64px;
   z-index: 2;
+  height: 32px;
 }
 
 .header__title{
@@ -52,9 +52,6 @@
   font-size: 18px;
   font-weight: normal;
   z-index: 2;
-}
-
-.header__subtitle p{
   margin: 0;
 }
 
@@ -72,10 +69,6 @@
   z-index: 1;
 }
 
-.header__main-illustration img{
-  height: 100%;
-  width: 100%;
-}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
@@ -93,7 +86,7 @@
   margin-bottom: 100px;
 }
 
-.description__two-columns{
+.two-columns{
   display: flex;
   width: 80%;
   justify-content: space-between;
@@ -285,25 +278,29 @@
   top: 0;
   width: 877px;
   height: 877px;
+  background-image: url('../images/kaufman-triangle.svg');
+  background-size: cover;
 }
 
 
 /* footer */
 
 .footer{
-  min-height: 250px;
+  min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #1f1f1f;
   color: white;
+
+  display: flex;
+  box-sizing: border-box;
 }
 
 .footer__columns{
   display: flex;
-  margin: auto;
+  margin: 0 auto;
   width: 90%;
   justify-content: space-between;
-  height: 250px;
 }
 
 .footer__column_content_copyright{
@@ -352,7 +349,7 @@
   color: white;
 }
 
-.footer__column-icon{
+.footer__social-icon{
   padding-right: 10px;
   height: 16px;
   width: 16px;
