@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="vendor/normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
   <title>Научиться учиться</title>
 </head>
 <body>
   <div class="page">
     <header class="header">
-        <img src="svg/logo_place_header.svg" alt="Яндекс тут!" class="logo logo_place_header">
+        <img src="images/logo_place_header.svg" alt="Яндекс тут!" class="logo logo_place_header">
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
         <a href="#" class="header__link" target="_blank">Узнать &rarr;</a>
@@ -38,27 +37,27 @@
         <p class="section-subtitle">Пять практик от Барбары Оакли</p>
         <div class="cards">
           <div class="cards__item">
-            <img src="images/cards-attention.png" alt="image" class="cards__image">
+            <img src="images/cards-attention.png" alt="изображение" class="cards__image">
             <h3 class="cards__title">Два вида внимания</h3>
             <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
           </div>
           <div class="cards__item">
-            <img src="images/cards-recall.png" alt="image" class="cards__image">
+            <img src="images/cards-recall.png" alt="изображение" class="cards__image">
             <h3 class="cards__title">Recall</h3>
             <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
           </div>
           <div class="cards__item">
-            <img src="images/cards-interliving.png" alt="image" class="cards__image">
+            <img src="images/cards-interliving.png" alt="изображение" class="cards__image">
             <h3 class="cards__title">Интерливинг</h3>
             <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
           </div>
           <div class="cards__item">
-            <img src="images/cards-question.png" alt="image" class="cards__image">
+            <img src="images/cards-question.png" alt="изображение" class="cards__image">
             <h3 class="cards__title">Вопросы</h3>
             <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
           </div>
           <div class="cards__item">
-            <img src="images/cards-competence.png" alt="image" class="cards__image">
+            <img src="images/cards-competence.png" alt="изображение" class="cards__image">
             <h3 class="cards__title">Иллюзия компетентности</h3>
             <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
           </div>
@@ -69,8 +68,8 @@
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video__iframe" allowfullscreen></iframe>
-          <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video__iframe" allowfullscreen></iframe>
+          <iframe  src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video__iframe" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video__iframe" allowfullscreen></iframe>
         </div>
       </section>
 
@@ -132,14 +131,13 @@
 
       <section class="khan">
         <div class="khan__container">
-          <h3 class="khan__author">Салман Хан</h3>
+          <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
           <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
-          <h4 class="khan__quote-author">Джордж Лукас</h4>
+          <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
-            <!-- <img src="../how-to-learn/images/khan-book.jpg" class="khan__book-pic" alt="Здесь скоро появится обложка книги:)"></img> -->
-            <div class="khan__book-pic"></div>
+            <img src="images/khan-book.jpg" class="khan__book-pic" alt="Здесь скоро появится обложка книги:)"></img>
             <a href="#" class="khan__buy-link" target="_blank">Купить книгу &rarr;</a>
           </div>
         </div>
@@ -197,10 +195,18 @@
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
         <div class="resources__logo-zone">
-          <img src="svg/resources-arzamas.svg" alt="Arzamas" class="resources__logo">
-          <img src="svg/resources-n1.svg" alt="N+1" class="resources__logo">
-          <img src="svg/resources-strelka.svg" alt="STRELKA" class="resources__logo">
-          <img src="svg/resources-polka.svg" alt="ПОЛКА" class="resources__logo">
+          <a href="#" target="_blank">
+            <img src="images/resources-arzamas.svg" alt="Арзамас" class="resources__logo">
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/resources-n1.svg" alt="ЭН+1" class="resources__logo">
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/resources-strelka.svg" alt="Стрелка" class="resources__logo">
+          </a>
+          <a href="#" target="_blank">
+            <img src="images/resources-polka.svg" alt="ПОЛКА" class="resources__logo">
+          </a>
         </div>
       </section>
 
@@ -208,7 +214,7 @@
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <img src="svg/logo_place_footer.svg" alt="Яндекс тут!" class="logo logo_place_footer">
+          <img src="images/logo_place_footer.svg" alt="Яндекс тут!" class="logo logo_place_footer">
           <p class="footer__author">&copy; 2020. Карелина Варвара</p>
         </div>
         <nav class="footer__column footer__column_content_info">
@@ -223,11 +229,11 @@
           <h5 class="footer__column-heading">Соцсети</h5>
           <div class="footer__column-links">
             <a class="footer__column-link" href="#" target="_blank">
-              <img src="svg/facebook_color_white.svg" alt="иконка Facebook" class="footer__social-icon">Facebook</a>
+              <img src="images/facebook_color_white.svg" alt="иконка Facebook" class="footer__social-icon">Facebook</a>
             <a class="footer__column-link" href="#" target="_blank">
-              <img src="svg/vk_color_white.svg" alt="иконка ВКонтакте" class="footer__social-icon">ВКонтакте</a>
+              <img src="images/vk_color_white.svg" alt="иконка ВКонтакте" class="footer__social-icon">ВКонтакте</a>
             <a class="footer__column-link" href="#" target="_blank">
-              <img src="svg/instagram_color_white.svg" alt="иконка Instagram" class="footer__social-icon">Instagram</a>
+              <img src="images/instagram_color_white.svg" alt="иконка Instagram" class="footer__social-icon">Instagram</a>
           </div>
         </div>
       </div>
